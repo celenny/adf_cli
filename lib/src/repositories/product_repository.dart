@@ -15,8 +15,6 @@ class ProductRepository {
 
     final responseData = jsonDecode(response.body);
 
-    //return responseData;
-
     if (responseData.isEmpty) {
       throw Exception('Produto não encontrado');
     }

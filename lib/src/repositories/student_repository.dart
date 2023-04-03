@@ -13,8 +13,8 @@ class StudentRepository {
 
     final studentsData = jsonDecode(studentsResult.body);
 
-    return studentsData.map<Student>((student) {
-      return Student.fromMap(student);
+    return studentsData.map<Student>((studentMap) {
+      return Student.fromMap(studentMap);
     }).toList();
   }
 

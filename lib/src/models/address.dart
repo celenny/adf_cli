@@ -5,7 +5,7 @@ import 'phone.dart';
 
 class Address {
   final String street;
-  final String number;
+  final int number;
   final String zipCode;
   final City city;
   final Phone phone;

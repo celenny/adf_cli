@@ -19,19 +19,40 @@ class Student {
     required this.address,
   });
 
-  Map<String, dynamic> toMap() {
+
+ /* Map<String, dynamic> toMap() {
     final map = <String, dynamic>{
       'id': id,
       'name': name,
+      if (age != null) {
+        map['age'] = age;
+      }
       'coursesNames': coursesNames,
       'courses': courses.map((course) => course.toMap()).toList(),
       'address': address.toMap(),
     };
 
-    if (age != null) map['age'] = age;
-
     return map;
   }
+*/
+  Map<String, dynamic> toMap() {
+    final result = <String, dynamic>{};
+
+    if (id != null) {
+      result.addAll({'id': id});
+    }
+    result.addAll({'name': name});
+    if (age != null) {
+      result.addAll({'age': age});
+    }
+    result.addAll({'coursesNames': coursesNames});
+    result.addAll({'courses': courses.map((x) => x.toMap()).toList()});
+    result.addAll({'address': address.toMap()});
+
+    return result;
+  }
+
+
 
   String toJson() => jsonEncode(toMap());
 

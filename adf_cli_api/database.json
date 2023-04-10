@@ -168,6 +168,74 @@
                     "phone": "985751255"
                 }
             }
+        },
+        {
+            "id": 3,
+            "name": "Luiz Antonio",
+            "age": 15,
+            "coursesNames": [
+                "Academia do flutter",
+                "Jornada GetX",
+                "Jornada Clean Code"
+            ],
+            "courses": [
+                {
+                    "id": 0,
+                    "name": "Academia do Flutter",
+                    "isStudent": true
+                },
+                {
+                    "id": 2,
+                    "name": "Jornada GetX",
+                    "isStudent": true
+                },
+                {
+                    "id": 3,
+                    "name": "Jornada Clean Code",
+                    "isStudent": true
+                }
+            ],
+            "address": {
+                "street": "Rua Nirvana",
+                "number": 654,
+                "zipCode": "64230000",
+                "city": {
+                    "id": 1,
+                    "name": "Buriti"
+                },
+                "phone": {
+                    "ddd": 86,
+                    "phone": "994687687"
+                }
+            }
+        },
+        {
+            "id": 4,
+            "name": "Shoyo Hinata",
+            "age": 26,
+            "coursesNames": [
+                "Academia do flutter"
+            ],
+            "courses": [
+                {
+                    "id": 0,
+                    "name": "Academia do Flutter",
+                    "isStudent": true
+                }
+            ],
+            "address": {
+                "street": "Rua Karasuno",
+                "number": 6154,
+                "zipCode": "9800000",
+                "city": {
+                    "id": 1,
+                    "name": "Miyagi"
+                },
+                "phone": {
+                    "ddd": 22,
+                    "phone": "994657689"
+                }
+            }
         }
     ]
 }

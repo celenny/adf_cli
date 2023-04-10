@@ -3,7 +3,7 @@ import 'dart:convert';
 class Course {
   final int id;
   final String name;
-  final bool isStudent;
+  bool isStudent;
 
   Course({
     required this.id,
@@ -30,4 +30,7 @@ class Course {
   }
 
   factory Course.fromJson(String json) => Course.fromMap(jsonDecode(json));
+
+  @override
+  String toString() => 'Courses(id: $id, name: $name, isStudent: $isStudent)';
 }

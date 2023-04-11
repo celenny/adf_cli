@@ -18,7 +18,7 @@ class UpdateCommand extends Command {
 
   UpdateCommand(this.studentRepository) {
     argParser.addOption('file', help: 'Path of the csv file', abbr: 'f');
-    argParser.addOption('id', help: 'Student ID', abbr: 'i');
+    argParser.addOption('id', help: 'Student Id', abbr: 'i');
   }
 
   @override

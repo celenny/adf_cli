@@ -82,48 +82,6 @@
             }
         },
         {
-            "id": 1,
-            "name": "Luana Rahman",
-            "coursesNames": [
-                "Academia Flutter"
-            ],
-            "courses": [
-                {
-                    "id": 1,
-                    "name": "Academia do Flutter",
-                    "isStudent": true
-                },
-                {
-                    "id": 2,
-                    "name": "Jornada GetX",
-                    "isStudent": false
-                },
-                {
-                    "id": 3,
-                    "name": "Jornada Clean Code",
-                    "isStudent": false
-                },
-                {
-                    "id": 4,
-                    "name": "Jornada Arquitetura",
-                    "isStudent": false
-                }
-            ],
-            "address": {
-                "street": "Rua Z",
-                "number": 202,
-                "zipCode": "0915225226",
-                "city": {
-                    "id": 1,
-                    "name": "Santo André"
-                },
-                "phone": {
-                    "ddd": 11,
-                    "phone": "985755556"
-                }
-            }
-        },
-        {
             "id": 2,
             "name": "Celenny Cristhyne Sousa",
             "age": 21,

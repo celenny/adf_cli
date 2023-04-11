@@ -5,19 +5,19 @@ class FindByIdCommand extends Command {
   final StudentRepository studentRepository;
 
   @override
-  String get description => 'Find Student by ID';
+  String get description => 'Find Student by Id';
 
   @override
   String get name => 'byId';
 
   FindByIdCommand(this.studentRepository) {
-    argParser.addOption('id', help: 'Student ID', abbr: 'i');
+    argParser.addOption('id', help: 'Student Id', abbr: 'i');
   }
 
   @override
   Future<void> run() async {
     if (argResults?['id'] == null) {
-      print('Por favor envie oid do Aluno com o command --id=0 ou -i 0');
+      print('Por favor envie o id do Aluno com o command --id=0 ou -i 0');
       return;
     }
 

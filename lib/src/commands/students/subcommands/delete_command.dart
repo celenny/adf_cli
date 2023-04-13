@@ -2,10 +2,12 @@
 import 'dart:io';
 
 import 'package:args/command_runner.dart';
-import '../../../repositories/student_repository.dart';
+import '../../../repositories/student_dio_repository.dart';
+//import '../../../repositories/student_repository.dart';
 
 class DeleteCommand extends Command {
-  final StudentRepository studentRepository;
+  final StudentDioRepository studentRepository;
+  // final StudentRepository studentRepository;
 
   @override
   String get description => 'Delete Student by Id';
@@ -36,7 +38,7 @@ class DeleteCommand extends Command {
       print('---' * 27);
       print('${'---' * 9}Aluno deletado com sucesso!${'---' * 9}');
       print('---' * 27);
-    } else{
+    } else {
       print('---' * 27);
       print('${'---' * 10} Operação cancelada! ${'---' * 10}');
       print('---' * 27);
